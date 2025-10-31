@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Studio Taupe Apps</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Studio Taupe Blog RSS Feed" href="rss.xml" />
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="StudioTaupe.png" alt="Studio Taupe logo" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Apps & Websites.html">Apps & Websites</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="blog-intro-section taupe-gradient-bg fade-in">
+            <div class="container blog-intro-inner">
+                <h1 class="blog-intro-title design-font">Discover our stories <span class="dev-emoji">👨‍💻</span></h1>
+                <div class="blog-intro-flex">
+                  <div class="blog-intro-text">
+                    <p class="blog-intro-lead">Explore our latest insights, developer adventures, app updates, and creative inspiration from the Studio Taupe team. <span class="dev-inline">$ echo "Hello, World!"</span> We share stories about building apps, digital services, and the tech that inspires us—both behind the scenes and in the world of Apple & beyond.</p>
+                  </div>
+                  <div class="blog-intro-funfact">
+                    <pre class="dev-code-snippet"><code>// Fun fact: This blog is
+// <span class="dev-highlight">handcrafted</span> with HTML & CSS
+function taupeWelcome() {
+  console.log('Welcome, developer!');
+}
+taupeWelcome();</code></pre>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog-list-section">
+            <div class="container">
+                <div class="blog-searchbar-wrapper" style="display:flex;justify-content:center;align-items:center;margin-bottom:2em;gap:0.7em;">
+                    <input type="text" id="blog-searchbar" class="blog-searchbar" placeholder="Search blog posts…" style="max-width:400px;width:100%;padding:0.7em 1.2em;border-radius:8px;border:1.5px solid #e3d9d1;font-size:1.1em;outline:none;box-shadow:0 2px 8px #23272e08;transition:border 0.2s;" />
+                    <a href="rss.xml" title="Subscribe via RSS" style="display:inline-flex;align-items:center;justify-content:center;padding:0.5em;border-radius:6px;background:#fff;border:1.5px solid #e3d9d1;box-shadow:0 2px 8px #23272e08;transition:background 0.18s,border 0.18s;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6.18" cy="17.82" r="2.18" fill="#b99d8b"/><path d="M4 11a8 8 0 0 1 9 9" stroke="#b99d8b" stroke-width="2" stroke-linecap="round"/><path d="M4 6a13 13 0 0 1 14 14" stroke="#b99d8b" stroke-width="2" stroke-linecap="round"/></svg></a>
+                </div>
+                <div class="blog-grid">
+                    <!-- dev-easteregg: JVH Puzzles blog card -->
+                    <article class="blog-card dev-blog-card">
+                        <div class="dev-terminal-header">
+                            <span class="dev-terminal-dot red"></span>
+                            <span class="dev-terminal-dot yellow"></span>
+                            <span class="dev-terminal-dot green"></span>
+                        </div>
+                        <div class="blog-card-inner">
+                            <div class="dev-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#23272e"/>
+                                    <text x="14" y="14" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono, Menlo, Monaco, monospace" font-size="13" fill="#ffbd2e">&lt;/&gt;</text>
+                                </svg>
+                            </div>
+                            <div class="blog-card-image">
+                                <!-- Camera icoon verwijderd -->
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-meta dev-meta-prompt">
+                                    <span class="dev-prompt">$</span>
+                                    <span class="blog-date dev-mono">2025-07-01</span>
+                                    <span class="blog-tags dev-mono">
+                                        <span class="dev-badge">#JVHPuzzle</span>
+                                        <span class="dev-badge">#Version1</span>
+                                        <span class="dev-badge">#Version2</span>
+                                    </span>
+                                </div>
+                                <h2 class="blog-card-title dev-mono"><a href="blog-jvh-puzzles-versions-1-2.html">JVH Puzzle – The Journey Begins (Versions 1 & 2)</a></h2>
+                                <p class="blog-card-intro">In this post, I take you behind the scenes of my first app, JVH Puzzle, and show you the journey from the very first build to the first improvements. Discover how the foundation was laid and what changed in Version 2!</p>
+                                <pre class="dev-mini-snippet"><code>// commit: v1-v2-release 🚀</code></pre>
+                                <a href="blog-jvh-puzzles-versions-1-2.html" class="blog-readmore dev-readmore">$ read more</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- dev-easteregg: blog card powered by Studio Taupe code! -->
+                    <article class="blog-card featured-blog dev-blog-card">
+                        <div class="dev-terminal-header">
+                            <span class="dev-terminal-dot red"></span>
+                            <span class="dev-terminal-dot yellow"></span>
+                            <span class="dev-terminal-dot green"></span>
+                        </div>
+                        <div class="blog-card-inner">
+                            <div class="dev-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#23272e"/>
+                                    <text x="14" y="14" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono, Menlo, Monaco, monospace" font-size="13" fill="#ffbd2e">&lt;/&gt;</text>
+                                </svg>
+                            </div>
+                            <div class="blog-card-image">
+                                <!-- Camera icoon verwijderd -->
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-meta dev-meta-prompt">
+                                    <span class="dev-prompt">$</span>
+                                    <span class="blog-date dev-mono">2025-07-01</span>
+                                    <span class="blog-tags dev-mono">
+                                        <span class="dev-badge">git:Update</span>
+                                        <span class="dev-badge">#Apps</span>
+                                    </span>
+                                </div>
+                                <h2 class="blog-card-title dev-mono"><a href="blog-first-post.html">Welcome to the Studio Taupe Blog!</a></h2>
+                                <p class="blog-card-intro">We're excited to launch our new blog. Here you'll find stories about our creative process, app updates, behind-the-scenes, and more. Stay tuned!</p>
+                                <pre class="dev-mini-snippet"><code>// commit: first-post 🎉</code></pre>
+                                <a href="blog-first-post.html" class="blog-readmore dev-readmore">$ read more</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Add more blog cards below (newest first) -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer taupe-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-logo-text">Studio Taupe</span>
+                <span class="footer-tagline">Creative digital products for Apple platforms</span>
+            </div>
+            <div class="footer-social">
+                <a href="mailto:developer@studiotaupe.com" title="Mail"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm0 0l8 8 8-8" stroke="#b99d8b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <a href="https://instagram.com/studiotaupe" target="_blank" title="Instagram"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5" stroke="#b99d8b" stroke-width="2"/><circle cx="12" cy="12" r="3.5" stroke="#b99d8b" stroke-width="2"/><circle cx="17" cy="7" r="1.2" fill="#b99d8b"/></svg></a>
+                <a href="https://linkedin.com/company/studiotaupe" target="_blank" title="LinkedIn"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4" stroke="#b99d8b" stroke-width="2"/><path d="M8 10v6M8 8v.01M12 10v6m0 0v-3a2 2 0 1 1 4 0v3" stroke="#b99d8b" stroke-width="2" stroke-linecap="round"/></svg></a>
+            </div>
+        </div>
+        <div class="footer-bottom-text">&copy; Studio Taupe 2022-2025 | Deventer, NL</div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    // Konami code easter egg
+    (function() {
+      var input = '';
+      var code = '38384040373937396665'; // up up down down left right left right b a
+      document.addEventListener('keydown', function(e) {
+        input += (e.keyCode ? e.keyCode : e.which);
+        if (input.length > 20) input = input.substr(input.length-20);
+        if (input === code) {
+          alert('👾 Taupe Dev Mode Activated!\nYou found the easter egg!');
+        }
+      });
+    })();
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('blog-searchbar');
+      if (!searchInput) return;
+      searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        document.querySelectorAll('.blog-card').forEach(function(card) {
+          const text = card.textContent.toLowerCase();
+          card.style.display = text.includes(query) ? '' : 'none';
+        });
+      });
+    });
+    </script>
+    <style>
+    .dev-emoji { font-size: 1.1em; vertical-align: middle; }
+    .dev-inline { font-family: 'DM Mono', 'Menlo', 'Monaco', monospace; background: #f4f4f4; padding: 0.1em 0.4em; border-radius: 4px; font-size: 0.95em; }
+    .dev-joke { color: #b99d8b; font-size: 0.95em; margin-left: 0.5em; }
+    .dev-code-snippet {
+      background: #23272e;
+      color: #e3d9d1;
+      font-family: 'DM Mono', 'Menlo', 'Monaco', monospace;
+      padding: 1em;
+      border-radius: 8px;
+      margin-top: 0;
+      font-size: 1em;
+      overflow-x: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      white-space: pre-line;
+      word-break: break-word;
+      width: 100%;
+      max-width: 400px;
+    }
+    .dev-highlight { color: #ffbd2e; }
+    @media (max-width: 600px) {
+      .dev-code-snippet { font-size: 0.95em; }
+    }
+    .blog-intro-flex {
+      display: flex;
+      align-items: flex-start;
+      gap: 2.5em;
+      margin-top: 1.2em;
+    }
+    .blog-intro-text {
+      flex: 2 1 0;
+      min-width: 0;
+    }
+    .blog-intro-funfact {
+      flex: 1 1 320px;
+      min-width: 220px;
+      max-width: 400px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    @media (max-width: 800px) {
+      .blog-intro-flex {
+        flex-direction: column;
+        gap: 1.2em;
+      }
+      .blog-intro-funfact {
+        justify-content: flex-start;
+        max-width: 100%;
+      }
+    }
+    .blog-intro-section {
+      padding-top: 6em;
+    }
+    .dev-terminal-header {
+      display: flex;
+      align-items: center;
+      background: #23272e;
+      border-radius: 10px 10px 0 0;
+      height: 18px;
+      padding: 0 0.7em;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 3;
+    }
+    .dev-terminal-dot {
+      width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 5px;
+    }
+    .dev-terminal-dot.red { background: #ff5f56; }
+    .dev-terminal-dot.yellow { background: #ffbd2e; }
+    .dev-terminal-dot.green { background: #27c93f; }
+    .dev-blog-card {
+      background: #23272e0a;
+      border: 1.5px solid #e3d9d1;
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .dev-blog-card:hover {
+      box-shadow: 0 4px 32px 0 #23272e22;
+      border-color: #b99d8b;
+    }
+    .dev-card-icon {
+      position: absolute;
+      left: 18px;
+      top: 32px;
+      z-index: 4;
+      pointer-events: none;
+    }
+    .dev-mono {
+      font-family: 'DM Mono', 'Menlo', 'Monaco', monospace !important;
+      letter-spacing: 0.01em;
+      font-size: 1em;
+    }
+    .dev-meta-prompt {
+      display: flex;
+      align-items: center;
+      gap: 0.7em;
+      margin-bottom: 0.2em;
+      margin-top: 0.2em;
+    }
+    .dev-prompt {
+      color: #ffbd2e;
+      font-family: 'DM Mono', 'Menlo', 'Monaco', monospace;
+      font-size: 1.1em;
+      margin-right: 0.2em;
+    }
+    .dev-badge {
+      background: #23272e;
+      color: #ffbd2e;
+      border-radius: 4px;
+      padding: 0.08em 0.5em;
+      margin-left: 0.3em;
+      font-size: 0.98em;
+      font-family: 'DM Mono', 'Menlo', 'Monaco', monospace;
+      border: 1px solid #b99d8b22;
+      display: inline-block;
+    }
+    .dev-mini-snippet {
+      background: #23272e;
+      color: #e3d9d1;
+      font-family: 'DM Mono', 'Menlo', 'Monaco', monospace;
+      padding: 0.3em 0.7em;
+      border-radius: 5px;
+      font-size: 0.98em;
+      margin: 0.7em 0 0.2em 0;
+      display: inline-block;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .dev-readmore {
+      font-family: 'DM Mono', 'Menlo', 'Monaco', monospace;
+      background: #23272e;
+      color: #ffbd2e;
+      padding: 0.15em 0.7em;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1em;
+      margin-top: 0.7em;
+      display: inline-block;
+      transition: background 0.2s, color 0.2s;
+    }
+    .dev-readmore:hover {
+      background: #ffbd2e;
+      color: #23272e;
+    }
+    @media (max-width: 600px) {
+      .dev-card-icon { left: 10px; top: 28px; }
+      .dev-terminal-header { height: 16px; padding: 0 0.4em; }
+    }
+    </style>
+</body>
+</html> 

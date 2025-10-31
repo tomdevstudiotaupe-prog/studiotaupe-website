@@ -1,0 +1,10 @@
+# Notion API Configuration (contains sensitive API key)
+notion-config.js
+
+# Common files to ignore
+.DS_Store
+._*
+*.log
+node_modules/
+*.rtf
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Studio Taupe Blog</title>
+    <link>https://dev.studiotaupe.com/blog.html</link>
+    <description>Latest stories, updates, and inspiration from Studio Taupe</description>
+    <language>en-us</language>
+    <item>
+      <title>JVH Puzzle – The Journey Begins (Versions 1 &amp; 2)</title>
+      <link>https://dev.studiotaupe.com/blog-jvh-puzzles-versions-1-2.html</link>
+      <description>Behind the scenes of my first app, JVH Puzzle, and the journey from the very first build to the first improvements.</description>
+      <pubDate>Tue, 01 Jul 2025 10:00:00 +0200</pubDate>
+      <guid>https://dev.studiotaupe.com/blog-jvh-puzzles-versions-1-2.html</guid>
+    </item>
+    <item>
+      <title>Welcome to the Studio Taupe Blog!</title>
+      <link>https://dev.studiotaupe.com/blog-first-post.html</link>
+      <description>We're excited to launch our new blog. Here you'll find stories about our creative process, app updates, behind-the-scenes, and more.</description>
+      <pubDate>Tue, 01 Jul 2025 09:00:00 +0200</pubDate>
+      <guid>https://dev.studiotaupe.com/blog-first-post.html</guid>
+    </item>
+  </channel>
+</rss> 

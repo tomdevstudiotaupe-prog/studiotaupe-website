@@ -1,0 +1,8 @@
+[build]
+  functions = "api"
+
+[[redirects]]
+  from = "/api/changelog"
+  to = "/.netlify/functions/changelog"
+  status = 200
+

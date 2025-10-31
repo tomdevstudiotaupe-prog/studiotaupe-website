@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps & Websites - Studio Taupe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+      .apps-websites-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+        justify-content: center;
+        align-items: stretch;
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+      .apps-list, .websites-list {
+        flex: 1 1 0;
+        max-width: 500px;
+      }
+      .app-card, .website-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .app-card:hover,
+      .website-card:hover {
+         transform: translateY(-8px);
+         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+      }
+      @media (max-width: 900px) {
+        .apps-websites-flex {
+          flex-direction: column;
+          gap: 4em;
+        }
+        .apps-list, .websites-list {
+          max-width: 100%;
+        }
+        .app-card, .website-card {
+          height: auto;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="StudioTaupe.png" alt="Studio Taupe logo" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Apps & Websites.html" class="active">Apps & Websites</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="simulator" class="simulator">
+            <div class="simulator-bg-ornament ornament1"></div>
+            <div class="simulator-bg-ornament ornament2"></div>
+            <div class="container">
+                <h2 class="section-title">Try JVH Puzzle</h2>
+                <p class="simulator-subtitle">Experience the app before downloading</p>
+                <div class="simulator-container">
+                    <div class="ipad-mockup fade-pop-in">
+                        <div class="ipad-screen">
+                            <div class="ipad-camera"></div>
+                            <img src="Screenshot 2025-06-24 at 19.25.43.png" alt="JVH Puzzle iPad Screenshot" class="ipad-screenshot" />
+                            <div class="ipad-reflection"></div>
+                        </div>
+                    </div>
+                    <div class="simulator-info">
+                        <h3>Track Your Puzzle Progress</h3>
+                        <ul class="feature-list">
+                            <li>📱 Log your entire puzzle collection</li>
+                            <li>📊 Track progress piece by piece</li>
+                            <li>📈 View detailed statistics</li>
+                            <li>🔄 Sync across all your devices</li>
+                            <li>👥 Share with other puzzle enthusiasts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="appstore-badge-wrapper">
+                    <a href="https://apps.apple.com/nl/app/jvh-puzzle/id6745961282?l=en-GB" target="_blank">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="appstore-badge" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="apps-websites-flex">
+          <section class="apps-list">
+              <div class="container">
+                  <h2 class="section-title">Apps</h2>
+                  <div class="apps-grid" style="display:flex;flex-direction:column;align-items:center;gap:2em;">
+                      <img src="Screenshot 2025-06-24 at 19.25.43.png" alt="JVH Puzzle Screenshot" style="width:100%;max-width:420px;height:260px;object-fit:cover;border-radius:18px;margin-bottom:1em;box-shadow:0 2px 12px #0001;display:block;" />
+                      <a href="https://apps.apple.com/nl/app/jvh-puzzle/id6745961282?l=en-GB" target="_blank">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height:48px;width:auto;display:block;margin:0 auto 1em auto;" />
+                      </a>
+                      <div class="app-card" style="max-width:420px;width:100%;margin:0 auto;background:#fff;border-radius:18px;box-shadow:0 2px 16px #0001;padding:1.2em 1.5em 1.2em 1.5em;display:flex;flex-direction:column;align-items:flex-start;">
+                          <h3 style="margin-bottom:0.2em;">JVH Puzzle</h3>
+                          <p style="margin-bottom:0.5em;font-size:1em;">Track your puzzle progress like never before! The ultimate tracker for Jan van Haasteren fans.</p>
+                          <div class="app-tags" style="margin-bottom:0.5em;">
+                              <span class="tag">iOS</span>
+                              <span class="tag">iPad</span>
+                          </div>
+                          <div style="display:flex;gap:0.7em;align-items:center;flex-wrap:wrap;">
+                              <a href="jvh-puzzle.html" class="btn btn-secondary" style="padding:0.4em 1em;font-size:1em;">App details</a>
+                          </div>
+                      </div>
+                      <!-- Voeg hier meer app-cards toe voor andere apps in de toekomst -->
+                  </div>
+              </div>
+          </section>
+          <section class="websites-list">
+              <div class="container">
+                  <h2 class="section-title">Websites</h2>
+                  <div class="websites-grid" style="display:flex;flex-direction:column;align-items:center;gap:2em;">
+                      <img src="Screenshot 2025-06-26 at 14.22.10.png" alt="Studio Taupe Website Screenshot" style="width:100%;max-width:420px;height:260px;object-fit:cover;border-radius:18px;margin-bottom:1em;box-shadow:0 2px 12px #0001;display:block;" />
+                      <a href="https://studiotaupe.com/" target="_blank" style="display:flex;flex-direction:row;align-items:center;justify-content:center;background:#232323;color:#fff;font-weight:500;font-size:1.08em;border-radius:16px;height:60px;padding:0 24px;margin:0 auto 1em auto;box-shadow:0 2px 12px #0001;text-decoration:none;gap:0.7em;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 0 24 24" fill="none" style="display:block;"><circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="2"/><path d="M2 12h20M12 2c2.5 3.5 2.5 16.5 0 20M4.5 6h15M4.5 18h15" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+                        <span style="display:block;line-height:1.1;text-align:center;white-space:nowrap;">
+                          Visit Studio Taupe
+                        </span>
+                      </a>
+                      <div class="website-card" style="max-width:420px;width:100%;margin:0 auto;background:#fff;border-radius:18px;box-shadow:0 2px 16px #0001;padding:1.2em 1.5em 1.2em 1.5em;display:flex;flex-direction:column;align-items:flex-start;">
+                          <h3 style="margin-bottom:0.2em;">Studio Taupe</h3>
+                          <p style="margin-bottom:0.5em;font-size:1em;min-height:3.8em;">
+                              Creative digital studio from Deventer. Specialized in photography, retouch, and product presentation for brands and creators.
+                          </p>
+                          <div class="website-tags" style="margin-bottom:0.5em;">
+                              <span class="tag">Portfolio</span>
+                              <span class="tag">Photography</span>
+                          </div>
+                          <div style="display:flex;gap:0.7em;align-items:center;flex-wrap:wrap;">
+                              <a href="https://studiotaupe.com/" class="btn btn-secondary" style="padding:0.4em 1em;font-size:1em;" target="_blank">Visit website</a>
+                              <a href="https://studiotaupe.com/portfolio" class="app-link" style="font-size:1em;" target="_blank">Portfolio</a>
+                          </div>
+                      </div>
+                      <!-- Voeg hier meer website-cards toe voor andere websites in de toekomst -->
+                  </div>
+              </div>
+          </section>
+        </div>
+    </main>
+    <footer class="footer taupe-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-logo-text">Studio Taupe</span>
+                <span class="footer-tagline">Creative digital products for Apple platforms</span>
+            </div>
+            <div class="footer-social">
+                <a href="mailto:developer@studiotaupe.com" title="Mail"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm0 0l8 8 8-8" stroke="#b99d8b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <a href="https://instagram.com/studiotaupe" target="_blank" title="Instagram"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5" stroke="#b99d8b" stroke-width="2"/><circle cx="12" cy="12" r="3.5" stroke="#b99d8b" stroke-width="2"/><circle cx="17" cy="7" r="1.2" fill="#b99d8b"/></svg></a>
+                <a href="https://linkedin.com/company/studiotaupe" target="_blank" title="LinkedIn"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4" stroke="#b99d8b" stroke-width="2"/><path d="M8 10v6M8 8v.01M12 10v6m0 0v-3a2 2 0 1 1 4 0v3" stroke="#b99d8b" stroke-width="2" stroke-linecap="round"/></svg></a>
+            </div>
+        </div>
+        <div class="footer-bottom-text">&copy; Studio Taupe 2022-2025 | Deventer, NL</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
