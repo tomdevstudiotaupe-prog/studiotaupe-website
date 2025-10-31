@@ -1,8 +1,2 @@
-{
-  "functions": {
-    "api/changelog/index.js": {
-      "runtime": "nodejs18.x"
-    }
-  }
-}
+{}
 
