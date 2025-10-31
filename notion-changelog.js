@@ -16,7 +16,7 @@ async function loadChangelogFromNotion() {
         // - Voor lokale ontwikkeling: gebruik proxyUrl (met npm run proxy)
         // - Voor direct testen: zet useProxy op false
         
-        const useServerless = false; // Zet op true na deployment op Vercel/Netlify (zie DEPLOYMENT.md)
+        const useServerless = true; // Enabled for Vercel/Netlify deployment
         const useProxy = false; // Zet op true voor lokale proxy server
         const serverlessUrl = '/api/changelog'; // Voor Vercel/Netlify
         const proxyUrl = 'http://localhost:3000/api/notion/changelog'; // Voor lokale proxy
